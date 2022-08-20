@@ -20,19 +20,18 @@ const NAV__LINKS = [
     url: "/create",
   },
   {
-    display: "Contact",
-    url: "/contact",
+    display: "Crypto",
+    url: "/Crypto",
   },
 ];
 
 function Header() {
   return (
     <div className="header">
-      <div className="container">
         <div className="navigation">
           <div className="logo">
             <h2>
-              <AccountBalanceIcon /> NFT Vault
+              DeFi <AccountBalanceIcon />
             </h2>
           </div>
 
@@ -40,7 +39,7 @@ function Header() {
             <ul className="nav__list">
               {NAV__LINKS.map((item, index) => (
                 <li className="nav__item" key={index}>
-                  <NavLink to={item.url}>{item.display}</NavLink>
+                  <NavLink to={item.url} className= { navClass => navClass.isActive ? 'active' : ''}>{item.display}</NavLink>
                 </li>
               ))}
             </ul>
@@ -49,7 +48,7 @@ function Header() {
           <div className="nav__right">
             <button className="btn">
               <Link to="/wallet">
-                <AccountBalanceWalletOutlinedIcon /> Connect Wallet
+                 Connect Wallet
               </Link>
             </button>
 
@@ -58,7 +57,6 @@ function Header() {
             </span>
           </div>
         </div>
-      </div>
     </div>
   );
 }

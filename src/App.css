@@ -7,12 +7,12 @@
 }
 
 body {
-    background: white !important;
+    background: #14141f !important;
     font-family: "roboto", sans-serif;
 }
 
 h1,h2 {
-    color: black;
+    color: #fff;
     font-weight: 500;
     font-size: 2rem;
 }
@@ -20,7 +20,7 @@ h1,h2 {
 p {
     font-weight: 400;
     font-size: 1rem;
-    color: black;
+    color: #fff;
     opacity: 85%;
     line-height: 35px;
 }
@@ -42,4 +42,16 @@ ul {
 
 section, footer {
     padding: 60px 0px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #343444;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    background-color: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
 }

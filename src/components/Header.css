@@ -4,14 +4,16 @@
     line-height: 70px;
     position: fixed;
     z-index: 100;
+    background-color: #14141f;
+    box-shadow: 0 5px 15px rgba(214, 98, 175, 0.06);
 }
 
 .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 24px;
     margin-left: 24px;
+    margin-right: 24px;
 }
 
 .nav__list {
@@ -22,20 +24,52 @@
 
 .nav__item a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 .nav__item a:hover {
-    color: green;
+    color: #fff;
 }
 
 .active {
-    color: green;
+    color: #e250e5 !important;
 }
 
-.btn {
-    text-align: center;
+.logo h2 {
+    background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+
+.nav__right .btn {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 8px 24px;
+    border: 1px solid #5142fc;
+    padding: 12px 24px;
+    background-color: #14141f;
+}
+
+.nav__right .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: #fff;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.btn:hover a {
+    color: #5142fc;
+}
+
+.mobile__menu {
+    color: #fff;
+    font-size: 1.3rem;
+    display: none;
 }
