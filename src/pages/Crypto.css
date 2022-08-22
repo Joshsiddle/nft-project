@@ -73,6 +73,7 @@
     align-items: center;
     color: #fff;
     padding-top: 120px;
+    animation: fade-up 1050ms 600ms backwards;
   }
   
   .coin-search {
@@ -81,6 +82,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
   }
   
   .coin-text {
@@ -106,4 +108,24 @@
   
   .coin-input::placeholder {
     color: #e2e2e2;
+  }
+
+  .crypto__banner {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://thumbs.dreamstime.com/b/abstract-d-rendering-technology-purple-wavy-grid-black-background-cryptocurrency-blockchain-network-programming-banner-187331023.jpg');
+    background-size: 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.5);
+  }
+
+  .padding {
+    height: 80px;
   }

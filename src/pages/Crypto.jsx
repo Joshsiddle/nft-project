@@ -3,6 +3,7 @@ import axios from "axios";
 import Coin from "../components/Coin";
 import "./Crypto.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Crypto() {
   const [coins, setCoins] = useState([]);
@@ -31,6 +32,16 @@ function Crypto() {
     <div>
       <Header />
 
+      <div className="crypto__banner">
+        <h1>Cryptocurrencies</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          nemo tempora vitae eligendi maiores id, quam earum veritatis nesciunt
+          iste ad nihil sequi ipsa magnam, nisi officiis doloremque quia
+          distinctio?
+        </p>
+      </div>
+
       <div className="coin-app">
         <div className="coin-search">
           <h1 className="coin-text">Search a currency</h1>
@@ -58,6 +69,12 @@ function Crypto() {
           );
         })}
       </div>
+
+      <div className="padding">
+        
+      </div>
+
+      <Footer />
     </div>
   );
 }

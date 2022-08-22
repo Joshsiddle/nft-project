@@ -1,9 +1,11 @@
-import React from 'react'
+import Modal from './Modal'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const NftCard = ({ props }) => {
-
 const { title, id, currentBid, creatorImg, imgUrl, creator } = props
+const [showModal, setShowModal] = useState(false)
+
 
   return (
     <div className="single__nft__card">
@@ -29,6 +31,14 @@ const { title, id, currentBid, creatorImg, imgUrl, creator } = props
             <p>{currentBid} ETH</p>
           </div>
         </div>
+      </div>
+
+      <div className="card__bottom">
+        <button className="bid__btn" onClick={() => setShowModal(true)}>Place Bid</button>
+
+        {showModal && <Modal setShowModal={setShowModal}/>}
+
+        <span className='history__link'><Link to='#'>View History</Link></span>
       </div>
     </div>
   </div>

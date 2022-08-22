@@ -1,0 +1,22 @@
+.single__step__item {
+    background: #343434;
+    border-radius: 5px;
+}
+
+.step__title {
+    color: #fff;
+}
+
+.step__item__content h5 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.walleticon {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.4rem;
+    background-color: #5142fc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}

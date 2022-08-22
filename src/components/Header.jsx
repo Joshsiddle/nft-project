@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import { NavLink, Link } from "react-router-dom";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import './Header.css'
 
@@ -25,9 +24,32 @@ const NAV__LINKS = [
   },
 ];
 
-function Header() {
+const Header = () => {
+    const menuRef = useRef(null)
+    const headerRef = useRef(null)
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         if (
+    //             document.body.scrollTop > 80 ||
+    //             document.documentElement.scrollTop > 80
+    //         ) {
+    //             headerRef.current.classList.add("header__shrink");
+    //         } else {
+    //             headerRef.current.classList.remove("header__shrink");
+    //         }
+    //     });
+
+    //     return () => {
+    //         window.removeEventListener("scroll", null)
+    //     }
+    // }, [])
+
+    const toggleMenu = () => menuRef.current.classList.toggle('active__menu')
+
+
   return (
-    <div className="header">
+    <header className="header" ref={headerRef}>
         <div className="navigation">
           <div className="logo">
             <h2>
@@ -35,7 +57,7 @@ function Header() {
             </h2>
           </div>
 
-          <div className="nav__menu">
+          <div className="nav__menu" ref={menuRef} onClick={toggleMenu}>
             <ul className="nav__list">
               {NAV__LINKS.map((item, index) => (
                 <li className="nav__item" key={index}>
@@ -53,11 +75,11 @@ function Header() {
             </button>
 
             <span className="mobile__menu">
-              <MenuOutlinedIcon />
+              <MenuOutlinedIcon onClick={toggleMenu}/>
             </span>
           </div>
         </div>
-    </div>
+    </header>
   );
 }
 

@@ -3,6 +3,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import LiveAuction from '../components/LiveAuction'
+import SellerSection from '../components/SellerSection'
+import StepSection from '../components/StepSection'
 
 function Home() {
   return (
@@ -12,6 +14,10 @@ function Home() {
         <Hero />
 
         <LiveAuction />
+
+        <SellerSection />
+
+        <StepSection />
 
         <Footer />
     </div>
