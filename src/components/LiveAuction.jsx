@@ -9,10 +9,7 @@ function LiveAuction() {
   return (
     <div className="liveAuction">
       <div className="live__auction--top">
-        <h3>Live Auction</h3>
-        <span>
-          <Link to="/market">Explore more</Link>
-        </span>
+        <h3>Featured Items</h3>
       </div>
         <div className="nft--wrapper">
              {

@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     color: #fff;
-    padding-top: 120px;
+    padding-top: 80px;
     animation: fade-up 1050ms 600ms backwards;
   }
   
@@ -119,11 +119,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('https://thumbs.dreamstime.com/b/abstract-d-rendering-technology-purple-wavy-grid-black-background-cryptocurrency-blockchain-network-programming-banner-187331023.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2021/02/02/18/30/icon-5974825_960_720.png');
     background-size: 100%;
     background-position: 0;
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.5);
+  }
+
+  .crypto__banner > h1 {
+    font-size: 50px;
+  }
+
+  .crypto__description {
+    text-align: center;
+    font-size: 24px;
+    color: lightgrey;
   }
 
   .padding {

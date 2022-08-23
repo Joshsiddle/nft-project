@@ -34,13 +34,9 @@ function Crypto() {
 
       <div className="crypto__banner">
         <h1>Cryptocurrencies</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          nemo tempora vitae eligendi maiores id, quam earum veritatis nesciunt
-          iste ad nihil sequi ipsa magnam, nisi officiis doloremque quia
-          distinctio?
-        </p>
       </div>
+
+      <p className="crypto__description">Browse the top 100 Cryptocurrencies throught our live price tracker</p>
 
       <div className="coin-app">
         <div className="coin-search">

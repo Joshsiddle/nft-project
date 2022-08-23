@@ -106,4 +106,11 @@
     flex-direction: column;
     padding-top: 40px;
   }
+
+  .mobile__menu {
+    display: inline;
+    padding-left: 16px;
+    position: relative;
+    top: 12px;
+  }
 }

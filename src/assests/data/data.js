@@ -128,7 +128,7 @@ export const NFT__DATA = [
         imgUrl: img11,
         creator: "Melony Fell",
         creatorImg: ava08,
-        currentBid: 6,
+        currentBid: 6.1,
     },
     {
         id: "12",

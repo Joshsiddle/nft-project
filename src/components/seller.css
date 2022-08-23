@@ -1,14 +1,70 @@
+
+
 .top__sellers {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+
+}
+
+.seller__section-title {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 64px;
+  padding-bottom: 24px;
+}
+
+.seller__section-title:after {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 80px;
 }
 
 .seller__card {
-    width: 240px;
-    height: 80px;
+  width: 220px;
+  height: 80px;
+  background: #343444;
+  border-radius: 12px;
+  margin: 8px;
+  display: flex;
+  padding: 8px;
 }
 
 .seller__img {
-    width: 50px;
-    height: 50px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.seller__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.seller__content > h6 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.seller__content > h5 {
+  font-size: 14px;
+  color: #a4a4a4;
+}
+
+.seller__rank {
+  color: #fff;
+  font-size: 16px;
 }

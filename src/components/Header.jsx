@@ -15,13 +15,10 @@ const NAV__LINKS = [
     url: "/market",
   },
   {
-    display: "Create",
-    url: "/create",
-  },
-  {
     display: "Crypto",
-    url: "/Crypto",
+    url: "/crypto",
   },
+ 
 ];
 
 const Header = () => {
@@ -75,7 +72,7 @@ const Header = () => {
             </button>
 
             <span className="mobile__menu">
-              <MenuOutlinedIcon onClick={toggleMenu}/>
+              <MenuOutlinedIcon style={{fontSize: 40}} onClick={toggleMenu}/>
             </span>
           </div>
         </div>

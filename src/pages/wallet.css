@@ -1,0 +1,56 @@
+.wallet__banner {
+    background: url('https://www.block8.com/hubfs/Block8_June_2020_Pillar_Page/pillar-page-banner-trim-1.png');
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -160px;
+}
+
+.wallet-row {
+    position: relative;
+    top: -240px;
+}
+
+.wallet__options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 280px;
+    height: 240px;
+    text-align: center;
+    background-color: #343444;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.wallet__subtitle {
+    text-align: center;
+
+}
+
+.wallet__para {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.box > p {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.box__title {
+    color: #fff;
+    margin: 8px 0;
+}

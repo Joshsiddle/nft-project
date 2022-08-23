@@ -12,13 +12,15 @@ const SellerSection = () => {
         <div className="top__sellers">
              {SELLER__DATA.map((item) => (
           <div className="seller__card">
+
+                <div className="seller__rank">{+item.id}.</div>
             <div >
               <img className="seller__img" src={item.sellerImg} alt="" />
             </div>
 
             <div className="seller__content">
               <h6>{item.sellerName}</h6>
-              <h6>{item.currentBid}</h6>
+              <h5>{item.currentBid} ETH</h5>
             </div>
           </div>
         ))}

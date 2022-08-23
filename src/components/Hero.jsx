@@ -5,9 +5,10 @@ import heroImg from "../assests/images/hero.png";
 
 function Hero() {
   return (
-    <div className="hero">
-      <div className="container">
-        <div className="hero__left">
+    <div className="container">
+      <div className="row">
+        <div className="hero">
+             <div className="hero__left">
           <h3>DeFi MARKET</h3>
           <h1>Create, sell and collect digital items.</h1>
           <p>
@@ -17,12 +18,14 @@ function Hero() {
             Aut, molestias?
           </p>
           <button className="btn explore__btn">
-            <Link to="/Market">Explore</Link>
+            <Link to="/market">Explore</Link>
           </button>
         </div>
         <div className="hero__right">
           <img src={heroImg} alt="" className="hero__img" />
         </div>
+        </div>
+       
       </div>
     </div>
   );

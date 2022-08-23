@@ -3,10 +3,44 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 24px;
 }
 
 #filter {
-    margin-top: 500px;
+    margin-top: 72px;
     height: 50px;
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: #343444;
+    border-radius: 5px;
+}
+
+.market__banner {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://cdn.pixabay.com/photo/2021/02/02/18/30/icon-5974825_960_720.png');
+    background-size: 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.market__banner > h1 {
+    font-size: 50px;
+}
+
+.market__description {
+    text-align: center;
+    font-size: 24px;
+    color: lightgray;
 }

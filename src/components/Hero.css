@@ -1,5 +1,4 @@
 .hero  {
-    padding-top: 120px;
     height: 100vh;
     display: flex;
     width: 100%;
@@ -7,10 +6,10 @@
     justify-content: space-around;
 }
 
-.container {
+/* .container {
     margin: 0px 40px;
     max-width: 1200px;
-}
+} */
 
 .hero__left {
     line-height: 50px;

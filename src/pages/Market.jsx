@@ -6,37 +6,59 @@ import "./Market.css";
 
 import { NFT__DATA } from "../assests/data/data";
 
-const Market = ({ NFTs: initialNFTs }) => {
-  const [NFTs, setNFTs] = useState(initialNFTs);
+const Market = () => {
+  const [data, setData] = useState(NFT__DATA);
 
-  function filterNFTs(filter) {
-    if (filter === "LOW_TO_HIGH") {
-      setNFTs(NFTs.slice().sort((a, b) => a.currentBid - b.currentPrice));
+  const handleSort = (e) => {
+
+    const filterValue = e.target.value
+
+    if(filterValue === 'high'){
+      const filterData = NFT__DATA.filter(item => item.currentBid > 6)
+
+      setData(filterData)
     }
-    if (filter === "HIGH_TO_LOW") {
-      setNFTs(NFTs.slice().sort((a, b) => b.currentBid - a.currentBid));
+
+    if(filterValue === 'mid'){
+      const filterData = NFT__DATA.filter(item => item.currentBid > 2 && item.currentBid < 6)
+
+      setData(filterData)
     }
+
+    if(filterValue === 'low'){
+      const filterData = NFT__DATA.filter(item => item.currentBid < 2)
+
+      setData(filterData)
+    }
+
   }
 
   return (
     <div>
       <Header />
 
+      <div className="market__banner">
+        <h1>NFT Market</h1>
+      </div>
+
+      <p className="market__description">Explore the hottest new Non-fungible tokens on DeFi's marketplace</p>
+
       <div className="container">
         <div className="row">
           <select
             id="filter"
             defaultValue="DEFAULT"
-            onChange={(event) => filterNFTs(event.target.value)}
+            onChange={handleSort}
           >
             <option value="DEFAULT" disabled>
               Sort
             </option>
-            <option value="LOW_TO_HIGH">Price, Low to High</option>
-            <option value="HIGH_TO_LOW">Price, High to Low</option>
+            <option value="high">Price: Higher</option>
+            <option value="mid">Price: Middle</option>
+            <option value="low">Price: Lower</option>
           </select>
           <div className="nft__list">
-            {NFT__DATA.map((props) => (
+            {data?.map((props) => (
               <NftCard key={props.id} props={props} />
             ))}
           </div>

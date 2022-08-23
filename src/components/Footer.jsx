@@ -4,9 +4,9 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance'
 
 function Footer() {
   return (
-    <footer className="footer">
-        <div className="container">
-            <div className="footer_1">
+    <div>
+        <div className="footer">
+            <div className="footer__1">
                 <h2 className='footer__header'>Marketplace</h2>
                 <p>All NFTs</p>
                 <p>Crypto</p>
@@ -40,13 +40,13 @@ function Footer() {
                 <p>Your email is safe with us. We dont't spam.</p>
             </div>
         </div>
-        <div className="logo">
+        <div className="footer__logo">
             <h2>
               DeFi <AccountBalanceIcon />
             </h2>
             CopyRight 2022
           </div>
-    </footer>
+    </div>
   )
 }
 

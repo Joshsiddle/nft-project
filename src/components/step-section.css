@@ -1,22 +1,63 @@
-.single__step__item {
-    background: #343434;
+.step__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.Step__section-title {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 64px;
+    padding-bottom: 24px;
+}
+
+.Step__section-title:after {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 80px;
+}
+
+.single__step {
+    background: rgb(181, 181, 181);
     border-radius: 5px;
+    width: 330px;
+    height: 360px;
+    padding: 50px;
 }
 
-.step__title {
-    color: #fff;
+.single__step:hover > .step__item__content > h5, 
+.single__step:hover > .step__item__content > p {
+    color: white;
 }
 
-.step__item__content h5 a {
-    text-decoration: none;
-    color: #fff;
+.single__step:hover {
+    background-color: rgb(39, 1, 116);
+    transition: 800ms ease;
 }
 
-.walleticon {
-    color: #fff;
-    padding: 20px;
-    font-size: 1.4rem;
-    background-color: #5142fc;
-    margin-bottom: 15px;
-    border-radius: 5px;
+.single__step > span {
+    color: white;
 }
+
+
+.step__item__content > h5 {
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+.step__item__content > p {
+    font-size: 16px;
+    color: #636363;
+    margin-bottom: 20px;
+}
+
