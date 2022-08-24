@@ -1,8 +1,8 @@
 import React from "react";
 import CurrencyBitcoinOutlinedIcon from "@mui/icons-material/CurrencyBitcoinOutlined";
 import "./wallet.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import TollIcon from "@mui/icons-material/Toll";
 import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
 import BugReportIcon from "@mui/icons-material/BugReport";

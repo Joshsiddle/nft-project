@@ -1,15 +1,15 @@
 import React from "react";
 
 import { Link, useParams } from "react-router-dom";
-import { NFT__DATA } from "../assests/data/data";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { NFT__DATA } from "../../assests/data/data";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
 import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 import "./NFTdetails.css";
-import LiveAuction from "../components/LiveAuction";
+import LiveAuction from "../../components/Featured/LiveAuction";
 
 const NftDetails = () => {
   const { id } = useParams();

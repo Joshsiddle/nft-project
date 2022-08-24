@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./LiveAuction.css";
 
-import NftCard from "./NftCard";
-import { NFT__DATA } from '../assests/data/data'
+import NftCard from "../NftCard";
+import { NFT__DATA } from '../../assests/data/data'
 
 function LiveAuction() {
   return (

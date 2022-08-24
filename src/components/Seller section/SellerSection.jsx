@@ -1,6 +1,6 @@
 import React from "react";
 import "./seller.css";
-import { SELLER__DATA } from "../assests/data/data";
+import { SELLER__DATA } from "../../assests/data/data";
 
 const SellerSection = () => {
   return (

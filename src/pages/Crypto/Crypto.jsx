@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Coin from "../components/Coin";
+import Coin from "../../components/Coin";
 import "./Crypto.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function Crypto() {
   const [coins, setCoins] = useState([]);

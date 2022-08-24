@@ -1,4 +1,4 @@
-import Modal from './Modal'
+import Modal from './Modal/Modal'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 

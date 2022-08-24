@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import NftCard from "../components/NftCard";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import NftCard from "../../components/NftCard";
 import "./Market.css";
 
-import { NFT__DATA } from "../assests/data/data";
+import { NFT__DATA } from "../../assests/data/data";
 
 const Market = () => {
   const [data, setData] = useState(NFT__DATA);

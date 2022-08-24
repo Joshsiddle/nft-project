@@ -1,5 +1,5 @@
 import React from "react";
-import "../pages/Crypto.css";
+import "../pages/Crypto/Crypto.css";
 
 const Coin = ({
   name,
