@@ -9,6 +9,10 @@
 
 }
 
+.t-a-c {
+  text-align: center;
+}
+
 .seller__section-title {
   font-size: 36px;
   text-align: center;
@@ -17,15 +21,8 @@
   position: relative;
   margin-bottom: 64px;
   padding-bottom: 24px;
-}
-
-.seller__section-title:after {
-    content: "";
-    background: white;
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    width: 80px;
+  display: inline-block;
+  box-shadow: 0 25px 0 -23px #343444
 }
 
 .seller__card {

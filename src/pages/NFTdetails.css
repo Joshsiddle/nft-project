@@ -11,6 +11,10 @@
   width: 40%;
 }
 
+.creator__img {
+    margin-right: 8px;
+}
+
 .single__nft--content > h2 {
   font-size: 36px;
   margin-bottom: 8px;

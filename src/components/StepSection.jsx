@@ -57,7 +57,7 @@ const step_data = [
 const StepSection = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row t-a-c">
         <h1 className="Step__section-title">Getting started is easy!</h1>
         <div className="step__section">
           {step_data.map((item) => (

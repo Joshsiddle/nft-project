@@ -38,8 +38,8 @@ const NftDetails = () => {
               </div>
              
               <div className="nft__creator">
-                <img src={singleNFT.creatorImg} alt="" />
-                <div className="creator__detai">
+                <img className="creator__img" src={singleNFT.creatorImg} alt="" />
+                <div className="creator__detail">
                   <p>Created By</p>
                   <h6>{singleNFT.creator}</h6>
                 </div>

@@ -12,15 +12,8 @@
   position: relative;
   margin-bottom: 24px;
   padding-bottom: 24px;
-}
-
-.live__auction--top > h3:after {
-    content: "";
-    background: white;
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    width: 80px;
+  display: inline-block;
+  box-shadow: 0 25px 0 -23px #343444
 }
 
 .single__nft__card {

@@ -5,7 +5,7 @@ import { SELLER__DATA } from "../assests/data/data";
 const SellerSection = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row t-a-c">
         <div className="seller__section-title">
           <h3>Top sellers</h3>
         </div>

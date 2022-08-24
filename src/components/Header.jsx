@@ -72,7 +72,7 @@ const Header = () => {
             </button>
 
             <span className="mobile__menu">
-              <MenuOutlinedIcon style={{fontSize: 40}} onClick={toggleMenu}/>
+              <MenuOutlinedIcon style={{fontSize: 40, cursor: 'pointer'}} onClick={toggleMenu}/>
             </span>
           </div>
         </div>
