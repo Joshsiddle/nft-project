@@ -139,3 +139,23 @@
   .padding {
     height: 80px;
   }
+
+  @media (max-width: 780px) {
+    .coin-symbol,
+    .coin-marketcap,
+    .coin-volume{
+      display: none;
+    }
+
+    .coin-row {
+      width: 100%;
+    }
+
+   
+  }
+  
+  @media (max-width: 480px) {
+    .coin {
+      min-width: 200px;
+    }
+  }

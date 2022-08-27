@@ -59,3 +59,25 @@
     color: #fff;
     font-size: 16px;
 }
+
+@media (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+    .footer__1 > .footer__header, 
+    .footer__2 > .footer__header, 
+    .footer__3 > .footer__header, 
+    .footer__4 > .footer__header {
+        font-size: 18px;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .footer__1,
+    .footer__2,
+    .footer__3 {
+        display: none;
+    }
+}

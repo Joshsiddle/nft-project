@@ -37,7 +37,7 @@ function Footer() {
                 <h2 className="footer__header">Newsletter</h2>
                 <p>Signup for our newsletter to get the latest news in your inbox.</p>
                 <input type='email' placeholder='example@email.com'></input>
-                <p>Your email is safe with us. We dont't spam.</p>
+                <p>Your email is safe with us. We don't spam.</p>
             </div>
         </div>
         <div className="footer__logo">

@@ -54,3 +54,9 @@
     color: #fff;
     margin: 8px 0;
 }
+
+@media (max-width: 480px) {
+    .wallet__options {
+        justify-content: center;
+    }
+}

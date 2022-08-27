@@ -8,24 +8,23 @@ function Hero() {
     <div className="container">
       <div className="row">
         <div className="hero">
-             <div className="hero__left">
-          <h3>DeFi MARKET</h3>
-          <h1>Create, sell and collect digital items.</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque
-            nostrum consectetur. Voluptate odit modi unde. Earum magni cumque
-            labore tempora debitis ipsa. Eaque quaerat tempore quis aspernatur!
-            Aut, molestias?
-          </p>
-          <button className="btn explore__btn">
-            <Link to="/market">Explore</Link>
-          </button>
+          <div className="hero__left">
+            <h3>DeFi MARKET</h3>
+            <h1>Create, sell and collect digital items.</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              eaque nostrum consectetur. Voluptate odit modi unde. Earum magni
+              cumque labore tempora debitis ipsa. Eaque quaerat tempore quis
+              aspernatur! Aut, molestias?
+            </p>
+            <button className="btn explore__btn">
+              <Link to="/market">Explore</Link>
+            </button>
+          </div>
+          <div className="hero__right">
+            <img src={heroImg} alt="" className="hero__img" />
+          </div>
         </div>
-        <div className="hero__right">
-          <img src={heroImg} alt="" className="hero__img" />
-        </div>
-        </div>
-       
       </div>
     </div>
   );
