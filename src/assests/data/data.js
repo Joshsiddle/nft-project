@@ -198,7 +198,7 @@ export const NFT__DATA = [
         title: "Rainbow Sqaud",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
         imgUrl: img19,
-        creator: "Susan Boyle",
+        creator: "Suzy Boyle",
         creatorImg: ava10,
         currentBid: 0.55,
     },
@@ -307,7 +307,7 @@ export const SELLER__DATA = [
     {
         id: "10",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
-        sellerName: "Susan Boyle",
+        sellerName: "Suzy Boyle",
         sellerImg: ava10,
         currentBid: 5.89,
         fbUrl: "#",
